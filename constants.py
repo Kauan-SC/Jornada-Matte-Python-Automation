@@ -1,7 +1,8 @@
 # Project Status
 from datetime import datetime, timedelta
-from zoneinfo import ZoneInfo
 from typing import ClassVar
+from zoneinfo import ZoneInfo
+
 
 class ProjectStatus:
     ACTIVE = "active"

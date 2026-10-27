@@ -26,7 +26,7 @@ O fluxo é sequencial: cada stage cria uma tarefa (e subtarefas) no ClickUp para
 - `stages/` — lógica de cada etapa do onboarding
 - `core/` — banco de dados, logging, notificações
 - `integrations/` — ClickUp
-- `dashboard/` — interface web de acompanhamento
+- `handler.py` — funções Lambda: `webhook` (disparo), `check_stages` (checagem periódica), `dashboard` (acompanhamento)
 
 ---------------------------------------------------------------------------------------------------------------------------------------
 
@@ -37,14 +37,14 @@ Boas-Vindas e Apresentação do Time
 
 2. Acontece após o Onboarding, com tarefas para enviar instruções de assinar o CRM e pegar Feedback
 
-3. 
+3.
 
 3A -> Personalizar CRM
 3B -> Criação da IA
 3C -> Revisão da IA
 3D -> Entrega da IA
 
-4. 
+4.
 
 4A -> Onboarding do CRM
 4B -> Foi desativado

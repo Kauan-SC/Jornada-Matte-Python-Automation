@@ -1,6 +1,6 @@
 import json
-import traceback
 import time
+import traceback
 
 from core.logger import get_logger
 from stages.stage_1.stage_1 import run
