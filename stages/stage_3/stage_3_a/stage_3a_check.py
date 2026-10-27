@@ -2,7 +2,7 @@ from constants import Stages
 from core.database import get_active_projects_by_stage, update_project
 from core.logger import get_logger
 from integrations.clickup import is_task_completed
-from stages.stage_4.stage_4a import create_stage_4a
+from stages.stage_4.stage_4 import create_stage_4a
 
 logger = get_logger(__name__)
 
@@ -23,4 +23,4 @@ def check_stage_3a() -> None:
                 logger.error(f"Projeto {project['company_name']}: Falha ao criar Etapa 4A. Banco não atualizado.")
                 continue
 
-            update_project(project["id"], Stages.STAGE_4A, new_task_id )
+            update_project(project["id"], Stages.STAGE_4, new_task_id )
